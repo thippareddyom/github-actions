@@ -1,1 +1,13 @@
-test
+name: Github actions demo
+run-name: ${{ github.actor }} is testing out github actions
+on: [push]
+jobs:
+  explore:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "test"
+      - name: checkout code
+        uses: actions/checkout@v4
+      - name: list
+        run: |
+          ls -l ${{ github.workspace }}
