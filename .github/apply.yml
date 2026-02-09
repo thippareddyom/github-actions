@@ -1,0 +1,6 @@
+name: Terraform apply
+on:
+  [workflow_disptach]
+jobs:
+  Terraform-init:
+    runs-on: 
