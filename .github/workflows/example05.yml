@@ -7,7 +7,7 @@ jobs:
     name: test1
     runs-on: ubuntu-latest
     steps:
-     - run: "First step"
+     - run: echo "First step"
   Test2:
     name: test2
     runs-on: ubuntu-latest
