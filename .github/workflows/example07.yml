@@ -1,0 +1,8 @@
+name: example07
+on:
+  workflow_dispatch
+jobs:
+  Test1:
+    runs-on: ubuntu-latest
+    steps:
+     - run: exit 1
